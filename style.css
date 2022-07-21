@@ -1,0 +1,107 @@
+body{
+    background:linear-gradient(to right, rgba(52, 152, 219,0.5), rgba(231, 76, 60,0.5) );
+}
+footer{
+    position: relative;
+    bottom: 0;
+}
+footer a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.footer-links{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.footer-links a{
+    padding:10px;
+}
+
+.canvas{
+    margin: 10% auto;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    width:max-content;
+    box-shadow: 0 0 2px 4px #fff;
+    background-color: #fff;
+}
+
+/* hide input type number up down aerrow 
+*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
+}
+
+.title{
+    padding: 10px;
+}
+
+.btn-qr{
+    width: 30% !important;
+}
+
+.btn-submit{
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-submit button{
+    margin: 10px 0 15px 0;
+}
+
+.qr-img{
+    text-align: center;
+    transition: 0.5s;
+    display: none;
+}
+
+.form-control::placeholder{
+    text-align: center !important;
+}
+
+@media only screen and (max-width:768px){
+    .btn-qr{
+        width: 100% !important;
+    }
+    .btn-submit{
+        display: block;
+        padding-left: 30px !important;
+    }
+
+    .btn-submit button{
+        margin: 15px 0 15px 0;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .qr-img img{
+        width: 200px;
+    }
+
+    .btn-submit button{
+        margin: 15px 0 15px 0;
+    }
+}
+
+.qr-div{
+    padding: 10px;
+}
+
+#error{
+    display: none;
+}
+
+#qr-download{
+    display: none;
+    transition: 0.5s;
+}
